@@ -1,0 +1,25 @@
+nav{
+    background-color: #fff;
+    height: 6.3rem;
+    width: 100vw;
+    
+    & div{
+        display: flex;
+        align-items: flex-end;
+    }
+    & span{
+        font-family: PhosphatePro-Inline;
+        font-size: 4rem;
+        display: block;
+        
+    }
+
+    .nav-des{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 1.9rem;
+        color: $greyText;
+        margin-left: 2rem;
+        margin-bottom: 0.5rem;
+    }
+}

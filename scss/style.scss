@@ -1,0 +1,41 @@
+@import "fonts";
+@import "colors";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: $backgroundColor;
+
+}
+
+html{
+    font-size: 62.4%;
+}
+a{
+    font-style: normal;
+    text-decoration: none;
+}
+.center{
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+.titleheading{
+            font-family: 'Righteous', cursive;
+}
+
+.mainheading{
+    font-family: 'Odibee Sans', cursive;
+}
+@import "./responsive";
+@import "nav";
+@import "hero";
+@import "quote";
