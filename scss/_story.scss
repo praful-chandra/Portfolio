@@ -1,0 +1,37 @@
+.story{
+    background-color: #ffffff;
+    @include clearfix();
+
+    &>div{
+        height: 60rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-left{
+        width: 50%;
+        float: left;
+        & svg{
+            width: 75%;
+            height: 75%;
+        }
+    }
+    &-right{
+        width: 50%;
+        float: right;
+        flex-direction: column;
+        align-items: flex-start !important;
+
+        &-main{
+            font-size: 5rem;
+            margin-bottom: 5rem;
+        }
+        &-desc{
+            color: $greyText;
+            font-size: 3rem;
+            width: 75%;
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+}
