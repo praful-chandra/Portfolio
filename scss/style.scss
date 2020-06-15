@@ -1,41 +1,61 @@
 @import "fonts";
 @import "colors";
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-body{
-    background-color: $backgroundColor;
-
+body {
+  background-color: $backgroundColor;
 }
 
-html{
-    font-size: 62.4%;
+html {
+  font-size: 62.4%;
 }
-a{
-    font-style: normal;
-    text-decoration: none;
+a {
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
 }
-.center{
-        max-width: 1300px;
-        width: 100%;
-        margin: 0 auto;
+.center {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.titleheading {
+  font-family: "Righteous", cursive;
+}
+
+.mainheading {
+  font-family: "Odibee Sans", cursive;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31rem;
+  height: 8.8rem;
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
+
+  &-primary {
+    background-color: $primaryColor;
+    color: #fff;
+    border: 3px solid $primaryColor;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $backgroundColor;
+      color: $primaryColor;
     }
-
-.titleheading{
-            font-family: 'Righteous', cursive;
-}
-
-.mainheading{
-    font-family: 'Odibee Sans', cursive;
+  }
 }
 @import "./responsive";
 @import "nav";
 @import "hero";
 @import "quote";
+@import "pic";
