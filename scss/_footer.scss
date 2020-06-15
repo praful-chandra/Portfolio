@@ -1,0 +1,26 @@
+.footer{
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+
+    &-social{
+        display: flex;
+        margin-bottom: 1rem;
+        &-item{
+            margin: 0 2rem;
+            & svg{
+                width: 5rem;
+                height: 5rem;
+                fill: #fff;
+
+            }
+        }
+    }
+    &-info{
+        font-size: 2rem;
+        color: #fff;
+    }
+}
