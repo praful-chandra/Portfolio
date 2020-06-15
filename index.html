@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav>
+    <div class="menu-btn" id="menuBtn">
+      <div class="menu-btn-bar menu-btn-bar-b1"></div>
+      <div class="menu-btn-bar menu-btn-bar-b2"></div>
+      <div class="menu-btn-bar menu-btn-bar-b3"></div>
+    </div>
+    <div class="menu-screen hidden mainheading" id="menuScreen">
+        <ul>
+          <li><a href="#Home" id="home-menu"  class="menu-screen-itm1" rel="noopener noreferrer">Home</a></li>
+          <li><a href="#About" id="about-menu" class="menu-screen-itm2" rel="noopener noreferrer">About</a></li>
+          <li><a href="#Services" id="service-menu" class="menu-screen-itm3" rel="noopener noreferrer">Services</a></li>
+          <li><a href="#Contact" id="contact-menu" class="menu-screen-itm4" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+    </div>
+    <nav  id="Home">
       <div class="center">
         <span>Praful Chandra</span>
         <span class="nav-des">Web Developer</span>
@@ -469,7 +482,7 @@
     </div>
     <div class="quote">
       <div class="quote-wrapper">
-        <div class="quote-text mainheading">
+        <div class="quote-text mainheading"  id="About">
           Never Say ‘No’ , never say ‘I cannot’,for you are infinite. All the
           power is within you. You can do anything.
         </div>
@@ -479,7 +492,7 @@
         - swamy Vivekananda
       </div>
     </div>
-    <div class="pic center">
+    <div class="pic center" >
       <div class="pic-left">
         <div class="pic-left-content">
           <div class="pic-left-content-title mainheading">
@@ -498,7 +511,7 @@
         <img src="./Assets/praful.png" alt="praful" />
       </div>
     </div>
-    <div class="ecommerce">
+    <div class="ecommerce" id="Services">
       <div class="ecommerce-wrapper center">
         <div class="ecommerce-left">
           <div class="ecommerce-left-info titleheading">
@@ -3654,7 +3667,7 @@
         </div>
       </div>
     </div>
-    <div class="help center">
+    <div class="help center" id="Contact">
       <div class="help-title mainheading">I Can Help.</div>
       <div class="help-desc titleheading">
         If you have a project that you want to get started, think you need my
@@ -3772,5 +3785,6 @@
         2020. Praful Chandra
       </div>
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,186 @@
+.menu {
+  &-btn {
+    width: 10rem;
+    height: 10rem;
+    background-color: $primaryColor;
+    position: fixed;
+    z-index: 10000;
+    bottom: 5rem;
+    left: 5rem;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.425) inset;
+    &-bar {
+      width: 50%;
+      height: 0.7rem;
+      background-color: #fff;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      &-b1 {
+        animation: menuBtnO-1 0.25s linear;
+      }
+      &-b2 {
+        animation: menuBtnO-1 0.25s linear;
+      }
+
+      &-b3 {
+        animation: menuBtnO-2 0.25s linear;
+      }
+    }
+  }
+
+  &-close {
+    padding-left: 1rem;
+    .menu-btn-bar-b1 {
+      display: none;
+      transform: rotateZ(60deg) translateY(1rem);
+      transform-origin: bottom;
+      animation: menuBtnC-1 0.25s linear;
+    }
+    .menu-btn-bar-b2 {
+      border-radius: 50px;
+      transform: rotateZ(60deg) translateY(1rem);
+      transform-origin: bottom;
+      animation: menuBtnC-1 0.25s linear;
+    }
+    .menu-btn-bar-b3 {
+      border-radius: 50px;
+      transform: rotateZ(-60deg) translateY(-1rem);
+      transform-origin: top;
+      animation: menuBtnC-2 0.25s linear;
+    }
+  }
+
+  &-screen {
+    width: 100vw;
+    height: 100vh;
+    background: $transparentBackground;
+    position: fixed;
+    z-index: 9999;
+    animation: screenAnimation 1s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    &-itm1 {
+      opacity: 0;
+
+      animation: menuItems 0.5s forwards linear 0.5s;
+    }
+    &-itm2 {
+      opacity: 0;
+
+      animation: menuItems 0.5s forwards linear 0.7s;
+    }
+    &-itm3 {
+      opacity: 0;
+
+      animation: menuItems 0.5s forwards linear 0.9s;
+    }
+    &-itm4 {
+      opacity: 0;
+
+      animation: menuItems 0.5s forwards linear 1.1s;
+    }
+
+    & > ul {
+      list-style: none;
+      & a {
+        color: #fff;
+      }
+      & > li {
+        font-size: 10rem;
+        transition: all 0.25s ease-in;
+        &:hover {
+          text-shadow: 2px 4px 2px #000;
+          transform: translateY(-4px);
+        }
+      }
+    }
+  }
+}
+.hidden {
+  display: none;
+}
+
+@keyframes screenAnimation {
+  0% {
+    width: 10rem;
+    height: 10rem;
+    bottom: 5rem;
+    left: 5rem;
+    border-radius: 100%;
+    transform: scale(0);
+  }
+
+  70% {
+    border-radius: 20%;
+    transform: scale(9);
+  }
+
+  100% {
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes menuBtnC-1 {
+  from {
+    transform: rotateZ(0) translateY(0);
+  }
+
+  to {
+    transform: rotateZ(60deg) translateY(1rem);
+  }
+}
+@keyframes menuBtnC-2 {
+  from {
+    transform: rotateZ(0) translateY(0);
+  }
+
+  to {
+    transform: rotateZ(-60deg) translateY(-1rem);
+  }
+}
+
+@keyframes menuBtnO-1 {
+  from {
+    transform: rotateZ(60deg) translateY(1rem);
+  }
+
+  to {
+    transform: rotateZ(0) translateY(0);
+  }
+}
+@keyframes menuBtnO-2 {
+  from {
+    transform: rotateZ(-60deg) translateY(-1rem);
+  }
+
+  to {
+    transform: rotateZ(0) translateY(0);
+  }
+}
+
+@keyframes menuItems {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  70%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
