@@ -1,5 +1,5 @@
 .pic{
-
+    @include clearfix();
     &>div{
         height: 60rem;
         display: flex;

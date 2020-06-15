@@ -54,8 +54,18 @@ a {
     }
   }
 }
+
+
+@mixin clearfix {
+  &::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+}
 @import "./responsive";
 @import "nav";
 @import "hero";
 @import "quote";
 @import "pic";
+@import "ecommerce";
