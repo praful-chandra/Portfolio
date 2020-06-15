@@ -1,0 +1,27 @@
+<svg id="undraw_pen_nqf7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168.687" height="148.493" viewBox="0 0 168.687 148.493">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="gray" stop-opacity="0.251"/>
+      <stop offset="0.54" stop-color="gray" stop-opacity="0.122"/>
+      <stop offset="1" stop-color="gray" stop-opacity="0.102"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_40" data-name="Group 40">
+    <path id="Path_192" data-name="Path 192" d="M396.007,550.42h-37.6v13.219h4.177v6.609H391.83v-6.609h4.177Z" transform="translate(-294.461 -421.755)" fill="url(#linear-gradient)"/>
+    <path id="Path_193" data-name="Path 193" d="M447.513,250.919v45.275c4.5,1.351,6.472,2.731,7.58,5.673a14.239,14.239,0,0,1,.473,8.251c-.71,3.04-2.015,4.662-5.569,5.6a13.577,13.577,0,0,1-6.168.217c-4.911-1-7.493-4.342-7.493-9.892,0-5.311,1.824-8.129,6.839-9.805v-8.5l-.217-37.039L406.09,305.528s17.646,14.749,24.1,43.219h29.994s9.03-33.051,24.1-41.186Z" transform="translate(-363.13 -215.148)" fill="url(#linear-gradient)"/>
+    <path id="Path_194" data-name="Path 194" d="M456.257,261.88v42.014a11.942,11.942,0,1,1-5.975.515V261.88l-33.871,51.8s17.928,15.937,23.905,43.827h25.9s9.959-33.871,23.905-41.833Z" transform="translate(-371.235 -223.901)" fill="#eceff1"/>
+    <rect id="Rectangle_105" data-name="Rectangle 105" width="79.682" height="3.984" transform="translate(12.886 6.911)" fill="#eceff1"/>
+    <rect id="Rectangle_106" data-name="Rectangle 106" width="79.682" height="3.984" transform="translate(74.096 6.911)" fill="#eceff1"/>
+    <rect id="Rectangle_107" data-name="Rectangle 107" width="27.89" height="9.959" transform="translate(68.729 137.583)" fill="#ffb900"/>
+    <rect id="Rectangle_108" data-name="Rectangle 108" width="15.184" height="15.184" transform="translate(75.825 0.248)" fill="url(#linear-gradient-3)"/>
+    <rect id="Rectangle_109" data-name="Rectangle 109" width="13.944" height="13.944" transform="translate(76.518 0.934)" fill="#ffb900"/>
+    <circle id="Ellipse_290" data-name="Ellipse 290" cx="9" cy="9" r="9" fill="url(#linear-gradient-4)"/>
+    <circle id="Ellipse_291" data-name="Ellipse 291" cx="8.902" cy="8.902" r="8.902" transform="translate(150.882)" fill="url(#linear-gradient-4)"/>
+    <circle id="Ellipse_292" data-name="Ellipse 292" cx="7.968" cy="7.968" r="7.968" transform="translate(0.934 0.934)" fill="#ffb900"/>
+    <circle id="Ellipse_293" data-name="Ellipse 293" cx="7.968" cy="7.968" r="7.968" transform="translate(151.788 0.934)" fill="#ffb900"/>
+    <rect id="Rectangle_110" data-name="Rectangle 110" width="35.858" height="11.953" transform="translate(64.762 129.614)" fill="#ffb900"/>
+  </g>
+  <rect id="Rectangle_111" data-name="Rectangle 111" width="35.858" height="11.953" transform="translate(64.762 129.614)" opacity="0.2"/>
+</svg>
