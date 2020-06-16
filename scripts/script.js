@@ -39,10 +39,6 @@ function smoothScroll(targetElm, duration) {
   var distance = targetPos - startPosition;
   var startTime = null;
 
-  console.log(target);
-  console.log("tpos "+targetPos);
-  console.log("spos "+startPosition);
-  console.log("dis "+distance);
   
 
   function animation(currentTime) {

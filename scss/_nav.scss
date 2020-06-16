@@ -22,3 +22,19 @@ nav{
         margin-bottom: 0.5rem;
     }
 }
+
+//*-----------------------------------RESPONSIVE--------------------------------
+
+@media only screen and (max-width:1320px){
+    nav{
+        height: 8rem;
+        & div{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    }
+  }
+  
+  //*-----------------------------------RESPONSIVE--------------------------------
