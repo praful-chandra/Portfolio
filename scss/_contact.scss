@@ -1,0 +1,70 @@
+.contact{
+    &-heading{
+        text-align: center;
+        color: $primaryColor;
+        font-size: 4rem;
+    }
+
+    &-left{
+        width: 50%;
+        float: left;
+
+        & button{
+            background-color: $primaryColor;
+            color: #fff;
+            text-align: center;
+            outline: none;
+            border: none;
+            padding: 2rem 4em;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+    &-right{
+        width: 50%;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-field{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+        font-family: 'Raleway', sans-serif;
+        & label{
+            font-weight: 300;
+            font-size: 2rem;
+
+            & span{
+                color: #ff0000;
+            }
+        }
+
+        & input,& textarea{
+            width: 80%;
+            height: 5rem;
+            border-radius: 5px;  
+            border: 2px solid $primaryColor;
+            outline: none;
+            font-size: 3rem;
+            padding: 1rem;
+            color: $greyText;
+            &:focus{
+               // border: 4px solid $primaryColor;
+               color: #fff;
+                background-color: $transparentBackground;
+            }
+        }
+
+        & textarea{
+            height: auto;
+        }
+    }
+}

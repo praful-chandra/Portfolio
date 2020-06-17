@@ -22,6 +22,7 @@ a {
   font-style: normal;
   text-decoration: none;
   display: inline-block;
+  color: #000;
 }
 .center {
   max-width: 1300px;
@@ -92,3 +93,4 @@ a {
 @import "process";
 @import "help";
 @import "footer";
+@import "contact";
