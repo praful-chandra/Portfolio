@@ -7,11 +7,11 @@ const path = require("path");
 const PORT = process.env.PORT || 3000;
 
 
-mongoose.connect(process.env.MONGO_URI, {
-    useFindAndModify : false,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }).then(()=>console.log("mongodb connected")).catch(err=>console.log(err));
+// mongoose.connect(process.env.MONGO_URI, {
+//     useFindAndModify : false,
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   }).then(()=>console.log("mongodb connected")).catch(err=>console.log(err));
 
 
 app.listen(PORT,()=>{
