@@ -1,4 +1,13 @@
 .contact{
+    &-wrapper{
+        margin-bottom: 5rem;
+        &::after{ 
+            display: table;
+            content: "";
+            clear: both;
+            
+        }
+    }
     &-heading{
         text-align: center;
         color: $primaryColor;
