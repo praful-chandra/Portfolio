@@ -1,6 +1,8 @@
 .contact{
     &-wrapper{
         margin-bottom: 5rem;
+        min-height: 80vh;
+
         &::after{ 
             display: table;
             content: "";
@@ -77,3 +79,42 @@
         }
     }
 }
+
+
+//*--------------------------------------------RESPONSIVE-----------------------------------------
+
+@media only screen and(max-width : 950px){
+
+    .contact{
+        &-wrapper{
+            &>div:last-child{
+                min-height: 80vh;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items:center ;
+            justify-content: space-evenly;
+           }
+        }
+        &-left{
+            float: none;
+            margin: 5rem auto;
+            width: 90%;
+            & input,& textarea{
+                width: 100%;
+                height: 7rem;
+            }
+
+            & textarea{
+                height: auto;
+            }
+        }
+       &-right{
+           width: 80%;
+        }
+
+    
+    }
+
+}
+
+//*--------------------------------------------RESPONSIVE-----------------------------------------

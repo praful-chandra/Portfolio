@@ -1,0 +1,257 @@
+.projects {
+  &-wrapper {
+    margin: 3rem auto;
+  }
+
+  &-title {
+    color: $primaryColor;
+    font-family: "Odibee Sans", cursive;
+    font-size: 18.3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    & span {
+      width: 40%;
+    }
+    & div {
+      width: 55%;
+      height: 2rem;
+      background-color: $primaryColor;
+      transform: translateY(-4.5rem);
+      border-radius: 20px;
+    }
+
+    & div:last-child {
+      width: 3%;
+      height: 2rem;
+      background-color: $primaryColor;
+      transform: translateY(-4.5rem);
+      border-radius: 20px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50rem;
+    &-svg {
+      width: 40%;
+      height: 100%;
+      position: relative;
+      & svg {
+      height: 100%;
+
+        transition: all 0.5s;
+        animation: svg 1s linear;
+      }
+      & > * {
+        width: 100%;
+      }
+    }
+
+    &-list {
+      width: 58%;
+      height: 100%;
+      & ul {
+        list-style: none;
+
+        & li {
+          border-bottom: 1px solid $greyText;
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          cursor: pointer;
+          text-align: left;
+          & span:first-child {
+            font-size: 3.5rem;
+            color: $greyText;
+            font-family: "Raleway", sans-serif;
+            transform: translateY(-1rem);
+            width: 20%;
+          }
+
+          & span:last-child {
+            font-size: 8rem;
+            color: #4a4848;
+            font-family: "Righteous", cursive;
+            width: 80%;
+          }
+
+          &:not(:first-child) {
+            margin: 2rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tile {
+    position: absolute;
+    top: 0;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 50px #9c9c9c;
+    max-height: 100%;
+    overflow: hidden;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+        object-position: top;
+
+    }
+  &-dissapear {
+      transform: translateY(-10%);
+      opacity: 0;
+  }
+
+  &-appear{
+        animation: svg 0.3s  0.5s ease-in;
+      }
+  
+}
+
+
+
+
+@keyframes svg {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+svg {
+  overflow: visible;
+}
+
+
+
+
+#book1 {
+  animation: b1 3s alternate infinite linear;
+}
+
+#book2 {
+  animation: b1 2.5s alternate infinite linear;
+}
+
+#book3 {
+  animation: b1 2s alternate infinite linear;
+}
+#book4 {
+  animation: b1 1.5s alternate infinite linear;
+}
+
+@keyframes b1 {
+  0% {
+    transform: translateY(-5%);
+  }
+
+  100% {
+    transform: translateY(5%);
+  }
+}
+
+#e1,
+#e2,
+#e3,
+#e4 {
+  animation: stars 1.5s alternate infinite linear;
+}
+
+@keyframes stars {
+  0% {
+    r: 6;
+    /* transform: scale(1); */
+    opacity: 0.5;
+  }
+
+  100% {
+    /* transform: scale(3); */
+    r: 10;
+    opacity: 1;
+  }
+}
+
+#Rectangle_186 {
+  animation: rect 2s alternate infinite linear;
+}
+#Rectangle_187 {
+  animation: rect 2.5s alternate infinite linear;
+}
+#Rectangle_192 {
+  animation: rect 2.5s alternate 0.3s infinite linear;
+}
+
+@keyframes rect {
+  0% {
+    width: 79.782px;
+  }
+
+  100% {
+    width: 166.502px;
+  }
+}
+
+#Rectangle_208 {
+  animation: rect-height 2.5s alternate 0.3s infinite linear;
+}
+
+@keyframes rect-height {
+  0% {
+    width: 79.782px;
+    height: 20.813px;
+  }
+
+  30% {
+    width: 120.502px;
+  }
+
+  100% {
+    height: 100px;
+  }
+}
+
+
+//*-------------------------------------------RESPONSIVE--------------------------------------------
+
+@media only screen and (max-width :610px){
+    .projects{
+        &-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        &-title{
+            & div{
+               display: none;
+
+            }
+
+           
+        }
+        &-content{
+            flex-direction: column;
+
+            &-svg{
+                width: 100%;
+            }
+
+            &-list{
+                width: 100%;
+            }
+        }
+    }
+}
+
+//*-------------------------------------------RESPONSIVE--------------------------------------------

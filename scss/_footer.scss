@@ -12,7 +12,7 @@
         &-item{
             margin: 0 2rem;
             & svg{
-                width: 5rem;
+                width: 5rem;  
                 height: 5rem;
                 fill: #fff;
 
@@ -24,3 +24,17 @@
         color: #fff;
     }
 }
+// .footer{
+//     &-mobile{
+//         width: 100%;
+//         position: absolute;
+//         bottom: 0;
+//     }
+// }
+// //*--------------------------------------------RESPONSIVE-----------------------------------------
+
+@media only screen and(max-width : 950px){
+ 
+}
+
+//*--------------------------------------------RESPONSIVE-----------------------------------------
