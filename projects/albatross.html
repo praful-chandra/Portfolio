@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Albatross - Projects Archive - Website and application development - Praful
+      Chandra
+    </title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="projectsdetail-overlay" id="overlay">
+      <div class="projectsdetail-overlay-body">
+        <div>
+          <button onclick="closeOverlay()">X</button>
+        </div>
+        <div>
+          <div
+            class="projectsdetail-overlay-body-button"
+            id="left-btn"
+            onclick="moveLeft()"
+          >
+            <i class="fa fa-angle-left"></i>
+          </div>
+          <div class="projectsdetail-overlay-body-image">
+            <img src="" alt="" id="overlay-img" />
+          </div>
+          <div
+            class="projectsdetail-overlay-body-button"
+            id="right-btn"
+            onclick="moveRight()"
+          >
+            <i class="fa fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="projectsdetail-overlay" id="overlay-2">
+      <div class="projectsdetail-overlay-body">
+        <div>
+          <button onclick="closeViewWebsite()">X</button>
+        </div>
+        <div>
+          <div class="projectsdetail-viewWebsite">
+            <a
+              href="https://infrnt.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img
+                  src="../Assets/projects/infrnt/logo-user.png"
+                  alt="User Logo"
+                />
+                <div style="color: #F89135">User View</div>
+              </div></a
+            >
+            <a
+              href="https://infrnt.herokuapp.com/backend/curator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img
+                  src="../Assets/projects/infrnt/logo-admin.png"
+                  alt="Admin Logo"
+                />
+                <div style="color: #68203E">
+                  Admin Panel<br />
+                  email: admin@infrnt.com <br />
+                  password : infrnt#123
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <nav id="Home">
+      <div class="center">
+        <div>
+          <span> <a href="/"> Praful Chandra</a></span>
+          <span class="nav-des">Web Developer</span>
+        </div>
+        <div class="nav-links">
+          <span><a href="../projects.html">Projects</a></span>
+          <span><a href="../contact.html">Contact me</a></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="projectsdetail-banner">
+      <img src="../Assets/projects/albatross/banner.png" alt="albatross Banner" />
+    </div>
+    <div class="projectsdetail-container center">
+      <div class="projectsdetail-container-topgrid">
+        <div class="projectsdetail-container-topgrid-left">
+          <div
+            class="projectsdetail-container-topgrid-left-container projectsdetail-box"
+            style="height: 38rem; margin-bottom: 7rem;"
+          >
+            <div>Albatross</div>
+            <div style="margin-top: 4rem;">
+              Albatross is an static landing website that showcases their services.
+            </div>
+            <a href="https://albatrossnetworks.online/" target="_blank" class="projectsdetail-box-link">
+              View Website <i class="fa fa-angle-right"> </i>
+            </a>
+          </div>
+          <div
+            class="projectsdetail-container-topgrid-left-container projectsdetail-box"
+            style="height: 44rem;"
+          >
+            <div>Technology Stack</div>
+            <div>
+              <ul>
+                <li>
+                  <img src="../Assets/icons/HTML5.png" alt="Mongo" />
+                  <span>HTML</span>
+                </li>
+                <li>
+                  <img src="../Assets/icons/css.png" alt="Express" />
+                  <span>CSS</span>
+                </li>
+                 <li>
+                  <img src="../Assets/icons/JavaScript.svg" alt="React" />
+                  <span>Javascript</span>
+                </li>
+                <!--
+                <li>
+                  <img src="../Assets/icons/node.png" alt="Node" />
+                  <span>Node.js</span>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="projectsdetail-container-topgrid-right">
+          <div
+            class="projectsdetail-container-topgrid-right-container projectsdetail-box"
+            style="height: 81rem;"
+          >
+            <div>Description</div>
+            <div>
+              ALBATROSS is an printing agency that provides a large number of services.
+            </div>
+            <div class="projectsdetail-box-main">Website Design</div>
+            <div>
+              Was responsible for both the design and development of Albatross
+              website. The website was built using vanilla HTML CSS and JS.
+            </div>
+            <div class="projectsdetail-box-main">Responsive Design</div>
+            <div>
+              From the very start, the albatross website was designed and
+              developed to be fully responsive. A responsive layout allows the
+              website to resize appropriately across a wide range of devices
+              including desktop computers, laptops, tablets (e.g. iPad) and
+              smartphones
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="projectsdetail-container-bottom projectsdetail-box"
+        style="min-height: 35rem; margin-bottom: 6rem;"
+      >
+        <div>More Images</div>
+        <div class="projectsdetail-container-bottom-images">
+          <div
+            class="projectsdetail-container-bottom-images-item"
+            onclick="openOverlay(1)"
+          >
+            <img src="../Assets/projects/albatross/1.png" alt="albatross 1" />
+          </div>
+          <div
+            class="projectsdetail-container-bottom-images-item"
+            onclick="openOverlay(2)"
+          >
+            <img src="../Assets/projects/albatross/2.png" alt="albatross 2" />
+          </div>
+          <div
+            class="projectsdetail-container-bottom-images-item"
+            onclick="openOverlay(3)"
+          >
+            <img src="../Assets/projects/albatross/3.png" alt="albatross 3" />
+          </div>
+          <div
+            class="projectsdetail-container-bottom-images-item"
+            onclick="openOverlay(4)"
+          >
+            <img src="../Assets/projects/albatross/4.png" alt="albatross 4" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer footer-mobile">
+      <div class="footer-social">
+        <div class="footer-social-item">
+          <a
+            href="https://github.com/praful-chandra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 136 133"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xml:space="preserve"
+              xmlns:serif="http://www.serif.com/"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+              "
+            >
+              <g transform="matrix(1,0,0,1,-568.001,-447.669)">
+                <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+                  <g transform="matrix(1,0,0,1,152.608,139.345)">
+                    <path
+                      d="M0,-31.904C-8.995,-31.904 -16.288,-24.611 -16.288,-15.614C-16.288,-8.417 -11.621,-2.312 -5.148,-0.157C-4.333,-0.008 -4.036,-0.511 -4.036,-0.943C-4.036,-1.329 -4.05,-2.354 -4.058,-3.713C-8.589,-2.729 -9.545,-5.897 -9.545,-5.897C-10.286,-7.778 -11.354,-8.279 -11.354,-8.279C-12.833,-9.29 -11.242,-9.27 -11.242,-9.27C-9.607,-9.154 -8.747,-7.591 -8.747,-7.591C-7.294,-5.102 -4.934,-5.821 -4.006,-6.237C-3.858,-7.29 -3.438,-8.008 -2.972,-8.415C-6.589,-8.826 -10.392,-10.224 -10.392,-16.466C-10.392,-18.244 -9.757,-19.698 -8.715,-20.837C-8.883,-21.249 -9.442,-22.905 -8.556,-25.148C-8.556,-25.148 -7.188,-25.586 -4.076,-23.478C-2.777,-23.839 -1.383,-24.02 0.002,-24.026C1.385,-24.02 2.779,-23.839 4.08,-23.478C7.19,-25.586 8.555,-25.148 8.555,-25.148C9.444,-22.905 8.885,-21.249 8.717,-20.837C9.761,-19.698 10.392,-18.244 10.392,-16.466C10.392,-10.208 6.583,-8.831 2.954,-8.428C3.539,-7.925 4.06,-6.931 4.06,-5.411C4.06,-3.234 4.04,-1.477 4.04,-0.943C4.04,-0.507 4.333,0 5.16,-0.159C11.628,-2.318 16.291,-8.419 16.291,-15.614C16.291,-24.611 8.997,-31.904 0,-31.904"
+                      style="fill: rgb(255, 255, 255);"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a
+            href="https://www.linkedin.com/in/praful-chandra-313273151/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              height="512pt"
+              viewBox="0 0 512 512"
+              width="512pt"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a
+            href="https://www.instagram.com/prafffff/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m75 512h362c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-362c-24.8125 0-45-20.1875-45-45zm0 0"
+              />
+              <path
+                d="m256 391c74.4375 0 135-60.5625 135-135s-60.5625-135-135-135-135 60.5625-135 135 60.5625 135 135 135zm0-240c57.898438 0 105 47.101562 105 105s-47.101562 105-105 105-105-47.101562-105-105 47.101562-105 105-105zm0 0"
+              />
+              <path
+                d="m406 151c24.8125 0 45-20.1875 45-45s-20.1875-45-45-45-45 20.1875-45 45 20.1875 45 45 45zm0-60c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a href="mailto: chandra.s.praful@gmail.com?subject = fromPortfolio">
+            <svg
+              id="Capa_1"
+              enable-background="new 0 0 512 512"
+              height="512"
+              viewBox="0 0 512 512"
+              width="512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m467 61h-422c-24.813 0-45 20.187-45 45v300c0 24.813 20.187 45 45 45h422c24.813 0 45-20.187 45-45v-300c0-24.813-20.187-45-45-45zm-65.19 30-145.81 108.785-145.81-108.785zm-356.81 0h15.021l187.009 139.523c2.661 1.985 5.815 2.977 8.97 2.977s6.309-.992 8.97-2.977l187.009-139.523h15.021c8.265 0 14.989 6.719 14.999 14.982l-225.999 168.796-225.999-168.796c.01-8.263 6.734-14.982 14.999-14.982zm202.024 214.518c2.662 1.988 5.819 2.982 8.976 2.982s6.314-.994 8.976-2.982l157.024-117.28v232.762h-332v-232.762zm-217.024 100.482v-262.575l30 22.407v255.168h-15c-8.271 0-15-6.729-15-15zm437 15h-15v-255.168l30-22.407v262.575c0 8.271-6.729 15-15 15z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-social-item">
+          <a href="tel:9686915430">
+            <svg
+              id="Capa_1"
+              enable-background="new 0 0 512 512"
+              height="512"
+              viewBox="0 0 512 512"
+              width="512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <circle cx="256" cy="37.5" r="6" />
+                <path
+                  d="m391 0h-270c-20.678 0-37.5 16.822-37.5 37.5v437c0 20.678 16.822 37.5 37.5 37.5h270c20.678 0 37.5-16.822 37.5-37.5v-437c0-20.678-16.822-37.5-37.5-37.5zm22.5 474.5c0 12.407-10.094 22.5-22.5 22.5h-270c-12.406 0-22.5-10.093-22.5-22.5v-437c0-12.407 10.094-22.5 22.5-22.5h270c12.406 0 22.5 10.093 22.5 22.5z"
+                />
+                <path
+                  d="m286 437h-60c-12.406 0-22.5 10.093-22.5 22.5s10.094 22.5 22.5 22.5h60c12.406 0 22.5-10.093 22.5-22.5s-10.094-22.5-22.5-22.5zm0 30h-60c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5h60c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5z"
+                />
+                <path
+                  d="m391 30h-92.574c-1.989 0-3.896.79-5.304 2.197l-21.2 21.201c-4.277 4.257-9.932 6.602-15.922 6.602-5.993 0-11.637-2.341-15.893-6.593-.035-.036-13.158-13.139-21.229-21.21-1.407-1.407-3.315-2.197-5.304-2.197h-92.574c-4.143 0-7.5 3.358-7.5 7.5v173.5c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-166h81.968s18.2 18.189 19.076 18.981l-.038.038c7.089 7.081 16.497 10.981 26.494 10.981 9.983 0 19.396-3.896 26.517-10.984l19.015-19.016h81.968v362h-255v-166c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v173.5c0 4.142 3.357 7.5 7.5 7.5h270c4.143 0 7.5-3.358 7.5-7.5v-377c0-4.142-3.357-7.5-7.5-7.5z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-info titleheading">
+        2020. Praful Chandra
+      </div>
+    </div>
+
+    <script>
+      let pos = 1;
+
+      function checkvalue(Apos) {
+        pos = Apos;
+        if (pos === 1) {
+          document
+            .querySelector("#left-btn")
+            .classList.add("projectsdetail-overlay-body-button-disable");
+          document
+            .querySelector("#right-btn")
+            .classList.remove("projectsdetail-overlay-body-button-disable");
+        } else if (pos === 4) {
+          document
+            .querySelector("#left-btn")
+            .classList.remove("projectsdetail-overlay-body-button-disable");
+          document
+            .querySelector("#right-btn")
+            .classList.add("projectsdetail-overlay-body-button-disable");
+        } else {
+          document
+            .querySelector("#left-btn")
+            .classList.remove("projectsdetail-overlay-body-button-disable");
+          document
+            .querySelector("#right-btn")
+            .classList.remove("projectsdetail-overlay-body-button-disable");
+        }
+      }
+
+      function renderImg() {
+        checkvalue(pos);
+        document.querySelector(
+          "#overlay-img"
+        ).src = `../Assets/projects/albatross/${pos}.png`;
+      }
+
+      function moveRight() {
+        if (pos >= 1 && pos < 4) {
+          pos++;
+          renderImg();
+        }
+      }
+
+      function moveLeft() {
+        if (pos > 1 && pos <= 4) {
+          pos--;
+          renderImg();
+        }
+      }
+
+      function openOverlay(Apos) {
+        pos = Apos;
+        document
+          .querySelector("#overlay")
+          .classList.add("projectsdetail-overlay-open");
+        renderImg();
+      }
+      function closeOverlay() {
+        document
+          .querySelector("#overlay")
+          .classList.remove("projectsdetail-overlay-open");
+      }
+
+      function visitWebsite() {
+        document
+          .querySelector("#overlay-2")
+          .classList.add("projectsdetail-overlay-open");
+      }
+
+      function closeViewWebsite() {
+        document
+          .querySelector("#overlay-2")
+          .classList.remove("projectsdetail-overlay-open");
+      }
+    </script>
+  </body>
+</html>
