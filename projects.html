@@ -485,7 +485,7 @@
           </div>
           <div class="projects-content-list">
             <ul>
-              <li onmouseover="hidesvg('#quick-store')" onmouseout="showsvg('#quick-store')" > <span>01.</span> <span>Quick Store .</span> </li>
+              <li onmouseover="hidesvg('#quick-store')" onmouseout="showsvg('#quick-store')" onclick="openProject('quickstore.html')"> <span>01.</span> <span>Quick Store .</span> </li>
               <li onmouseover="hidesvg('#infrnt')" onmouseout="showsvg('#infrnt')" ><span>02.</span> <span>Infrnt .</span> </li>
               <li onmouseover="hidesvg('#albatross')" onmouseout="showsvg('#albatross')" ><span>03.</span> <span>Albatross .</span> </li>
               <li onmouseover="hidesvg('#frowlife')" onmouseout="showsvg('#frowlife')" ><span>04.</span> <span>Frow Life .</span> </li>
@@ -610,6 +610,10 @@
    document.querySelector("#book-svg").classList.remove("tile-dissapear");
     document.querySelector(id).classList.add("tile-dissapear");
 
+  }
+
+  function openProject(name){
+    window.location.href = `/projects/${name}`;
   }
 </script>
 </body>
