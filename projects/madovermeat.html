@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Infrnt - Projects Archive - Website and application development - Praful
+      Mad Over Meat - Projects Archive - Website and application development - Praful
       Chandra
     </title>
     <link rel="stylesheet" href="../css/style.css" />
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="projectsdetail-overlay" id="overlay-2">
+    <!-- <div class="projectsdetail-overlay" id="overlay-2">
       <div class="projectsdetail-overlay-body">
         <div>
           <button onclick="closeViewWebsite()">X</button>
@@ -73,7 +73,7 @@
                 />
                 <div style="color: #68203E">
                   Admin Panel<br />
-                  email: curator@infrnt.com <br />
+                  email: admin@infrnt.com <br />
                   password : infrnt#123
                 </div>
               </div>
@@ -81,7 +81,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <nav id="Home">
       <div class="center">
         <div>
@@ -96,7 +96,7 @@
     </nav>
 
     <div class="projectsdetail-banner">
-      <img src="../Assets/projects/infrnt/1.png" alt="Infrnt Banner" />
+      <img src="../Assets/projects/madovermeat/1.jpg" alt="madovermeat Banner" />
     </div>
     <div class="projectsdetail-container center">
       <div class="projectsdetail-container-topgrid">
@@ -105,15 +105,13 @@
             class="projectsdetail-container-topgrid-left-container projectsdetail-box"
             style="height: 38rem; margin-bottom: 7rem;"
           >
-            <div>Infrnt</div>
+            <div>MadOverMeat </div>
             <div style="margin-top: 4rem;">
-              Infrnt is an blogging app that allows curators to post their
-              styles in the curator tab and writers to write blogs to give user
-              an comlete fashion makeover.
+                MadOverMeat is an E-commerce platform built using wordpress.
             </div>
-            <button class="projectsdetail-box-link" onclick="visitWebsite()">
+            <a href="https://madovermeat.site" target="_blank" class="projectsdetail-box-link">
               View Website <i class="fa fa-angle-right"> </i>
-            </button>
+            </a>
           </div>
           <div
             class="projectsdetail-container-topgrid-left-container projectsdetail-box"
@@ -122,22 +120,16 @@
             <div>Technology Stack</div>
             <div>
               <ul>
+                  <br> <br>
                 <li>
-                  <img src="../Assets/icons/mongo.png" alt="Mongo" />
-                  <span>Mongo DB</span>
+                  <img src="../Assets/icons/wp.png" alt="Mongo" />
+                  <span>Wordpress</span>
                 </li>
-                <li>
-                  <img src="../Assets/icons/express.svg" alt="Express" />
-                  <span>Express.js</span>
-                </li>
-                <li>
-                  <img src="../Assets/icons/react.png" alt="React" />
-                  <span>React.js</span>
-                </li>
+                <!--
                 <li>
                   <img src="../Assets/icons/node.png" alt="Node" />
                   <span>Node.js</span>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -149,21 +141,16 @@
           >
             <div>Description</div>
             <div>
-              The main idea behind Infrnt is to provide an platform for curators to post their styles
-              and writers to write their blogs, which will be led by a team leader who inturn be under the 
-              supervision of admin.
-              admin have the access to add,remove curators,writers and teamleaders and also can assign them to
-              any particular teamleader.
+                MadOverMeat is an E-commerce platform built using wordpress.
             </div>
             <div class="projectsdetail-box-main">Website Design</div>
             <div>
-              Was responsible for both the design and development of Infrnt
-              website. The website was built using React for the front-end ,
-              Express(Node.js) for the Server and MongoDB as the Database.
+              Was responsible for both the design and development of madovermeat
+              website.
             </div>
             <div class="projectsdetail-box-main">Responsive Design</div>
             <div>
-              From the very start, the Infrnt website was designed and
+              From the very start, the Madovermeat website was designed and
               developed to be fully responsive. A responsive layout allows the
               website to resize appropriately across a wide range of devices
               including desktop computers, laptops, tablets (e.g. iPad) and
@@ -183,25 +170,25 @@
             class="projectsdetail-container-bottom-images-item"
             onclick="openOverlay(1)"
           >
-            <img src="../Assets/projects/infrnt/1.png" alt="infrnt 1" />
+            <img src="../Assets/projects/madovermeat/1.jpg" alt="madovermeat/ 1" />
           </div>
           <div
             class="projectsdetail-container-bottom-images-item"
             onclick="openOverlay(2)"
           >
-            <img src="../Assets/projects/infrnt/2.png" alt="infrnt 2" />
+            <img src="../Assets/projects/madovermeat/2.jpg" alt="madovermeat/ 2" />
           </div>
           <div
             class="projectsdetail-container-bottom-images-item"
             onclick="openOverlay(3)"
           >
-            <img src="../Assets/projects/infrnt/3.png" alt="infrnt 3" />
+            <img src="../Assets/projects/madovermeat/3.jpg" alt="madovermeat/ 3" />
           </div>
           <div
             class="projectsdetail-container-bottom-images-item"
             onclick="openOverlay(4)"
           >
-            <img src="../Assets/projects/infrnt/4.png" alt="infrnt 4" />
+            <img src="../Assets/projects/madovermeat/4.jpg" alt="madovermeat/ 4" />
           </div>
         </div>
       </div>
@@ -361,7 +348,7 @@
         checkvalue(pos);
         document.querySelector(
           "#overlay-img"
-        ).src = `../Assets/projects/infrnt/${pos}.png`;
+        ).src = `../Assets/projects/madovermeat/${pos}.jpg`;
       }
 
       function moveRight() {

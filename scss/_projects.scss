@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50rem;
+    min-height: 50rem;     
     &-svg {
       width: 40%;
       height: 100%;
